@@ -70,7 +70,7 @@ merged_df['Date'] = pd.to_datetime(merged_df['Date'])
 merged_df['Date'] = merged_df['Date'].dt.strftime('%Y-%m')
 
 # 2. ESG data
-esg_scores_df = pd.read_excel('/Users/brunooliveira/Desktop/Master II/QARM II/[4.Projets] QARM II/QARM - Data/esg_score_qarm.xlsx')
+esg_scores_df = pd.read_excel('esg_score_qarm.xlsx')
 esg_scores_df = esg_scores_df.rename(columns={esg_scores_df.columns[0]: 'Name'})
 esg_scores_df.columns = [
     col.strftime('%Y-%m') if isinstance(col, pd.Timestamp) else col
