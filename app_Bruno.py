@@ -12,7 +12,7 @@ import base64
 #1.Page setting and financial data cleaning
 
 st.set_page_config(page_title="Black-Litterman Optimization", layout="wide")
-df_p = pd.read_pickle("/Users/brunooliveira/Desktop/Master II/QARM II/[4.Projets] QARM II/QARM - Data/sentratio_and_price_closetoclose_adj2.pkl")
+df_p = pd.read_pickle("sentratio_and_price_closetoclose_adj2.pkl")
 tickers = ['AAPL', 'AMD', 'AMRN', 'AMZN', 'BABA', 'BAC', 'BB','GLD', 'IWM',
            'JNUG', 'MNKD', 'NFLX', 'PLUG', 'QQQ', 'SPY', 'TSLA', 'UVXY']
 data = yf.download(
